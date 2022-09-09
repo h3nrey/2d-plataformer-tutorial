@@ -185,11 +185,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 8
   m_Material: {fileID: 6200000, guid: 1ec8dd756647fff4b8812f5196652f57, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!212 &228986503
 SpriteRenderer:
@@ -272,15 +272,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01c75cc75183cf4a93eeca18e2ecaa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfJumps: 2
-  movementSpeed: 10
-  wallSlidingSpeed: 2
-  jumpForce: 16
+  amountOfJumps: 1
+  movementSpeed: 9
+  wallSlidingSpeed: 1
+  jumpForce: 20
   variableJumpHeightMultiplier: 0.5
   airDragMultiplier: 0.95
   movementForceInAir: 50
   groundCheckRadius: 0.3
-  wallCheckDistance: 0.4
+  wallCheckDistance: 0.65
+  wallHopForce: 10
+  wallJumpForce: 30
+  jumpTimerSet: 0.15
+  turnTimerSet: 0.1
+  wallJumpTimerSet: 0.5
+  wallHopDirection: {x: 1, y: 0.5}
+  wallJumpDirection: {x: 1, y: 2}
   groundCheck: {fileID: 1733951820}
   wallCheck: {fileID: 1781211995}
   whatIsGround:
